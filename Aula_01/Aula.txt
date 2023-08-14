@@ -1,0 +1,9 @@
+Dependências globais: typescript e ts-node
+
+Faça um programa que receba quatro números inteiros, calcule e mostre a soma desses números
+
+Faça um programa que receba três notas, calcule e mostre a média aritmédica entre elas
+
+Faça um programa que receba três notas, calcule e mostre a média ponderada entre elas
+
+Faça um programa que receba o salário de um funcionário, calcule e mostre o novo salário, sabendo-se que este sofreu um aumento de 25%.
