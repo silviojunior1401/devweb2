@@ -3,7 +3,9 @@ namespace exercicio6 {
 
     let numList: number[] = [num1, num2, num3];
 
-    numList.sort((a, b) => b - a);
+    // numList.sort((a, b) => b - a);
 
-    console.log(`O maior número informado é ${numList[0]}.`);
+    let numMax: number = Math.max(...numList);
+
+    console.log(`O maior número informado é ${numMax}.`);
 }
