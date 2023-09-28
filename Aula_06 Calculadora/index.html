@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="../modules/vue.global.js"></script>
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
+            rel="stylesheet"
+        />
+        <title>Aula 06 - Calculadora</title>
+    </head>
+    <body>
+        <div id="app">
+            <div class="calculadora">
+                <div class="display"><span>{{display}}</span></div>
+                <div class="numeros">
+                    <div class="linhas">
+                        <button @click="handleLimpar()">Limpar</button>
+                    </div>
+                    <div class="linhas">
+                        <button @click="handleButton('7')">7</button>
+                        <button @click="handleButton('8')">8</button>
+                        <button @click="handleButton('9')">9</button>
+                        <button class="operator" @click="handleButton('/')">
+                            /
+                        </button>
+                    </div>
+                    <div class="linhas">
+                        <button @click="handleButton('4')">4</button>
+                        <button @click="handleButton('5')">5</button>
+                        <button @click="handleButton('6')">6</button>
+                        <button class="operator" @click="handleButton('*')">
+                            *
+                        </button>
+                    </div>
+                    <div class="linhas">
+                        <button @click="handleButton('1')">1</button>
+                        <button @click="handleButton('2')">2</button>
+                        <button @click="handleButton('3')">3</button>
+                        <button class="operator" @click="handleButton('-')">
+                            -
+                        </button>
+                    </div>
+                    <div class="linhas">
+                        <button @click="handleButton('0')">0</button>
+                        <button @click="handleButton('.')">.</button>
+                        <button class="operator" @click="handleButton('=')">
+                            =
+                        </button>
+                        <button class="operator" @click="handleButton('+')">
+                            +
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script src="index.js"></script>
