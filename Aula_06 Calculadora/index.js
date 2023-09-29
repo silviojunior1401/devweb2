@@ -67,7 +67,7 @@ createApp({
 
 			this.numeroAtual = Number(this.display);
 			this.numeroAnterior = null;
-			this.operador = null;
+			this.operador = "#";
 		},
 
 		handleDecimal: function (decimal) {
@@ -77,10 +77,11 @@ createApp({
 		},
 
 		handleNumeros: function (numero) {
-			if (!this.numeroAtual) {
+			if (!this.numeroAtual || this.display === "0") {
 				this.display = "";
-			} else if (this.display === "0") {
+			} else if (this.operador === "#") {
 				this.display = "";
+				this.operador = null;
 			}
 
 			this.display += numero.toString();
